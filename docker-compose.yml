@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  app:
+    build: app
+    container_name: bakery
+    restart: always
+    ports:
+      - 80:80
