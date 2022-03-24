@@ -9,6 +9,8 @@
   "author": "Rajath Inuganti",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "redis": "^4.0.4"
   }
 }

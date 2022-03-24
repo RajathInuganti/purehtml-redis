@@ -3,7 +3,15 @@ version: "3.7"
 services:
   app:
     build: app
-    container_name: bakery
+    container_name: bookstore
     restart: always
     ports:
       - 80:80
+    command: 
+      sh -c 'npm install && node index.js'
+  
+  redis:
+    image: redis:alpine
+    container_name: cache
+    expose:
+      - 6379

@@ -1,3 +1,3 @@
-FROM nginx:alpine
+FROM node:alpine
 
-COPY . /usr/share/nginx/html
+COPY . .

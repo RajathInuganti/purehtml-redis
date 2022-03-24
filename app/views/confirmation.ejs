@@ -28,32 +28,12 @@
               </div>
             </div>
         </nav>
-        <ul style="margin-top: 20px;">
-          <% orders.forEach(function(order){ %>
-        <li style="list-style: none; background-color: #634133; border: solid; display: flex; flex-direction: row; justify-content: space-around; padding: 10px 20px;">
-          <div>
-            <div>Date: </div>
-            <div><%= order.date %></div>
-          </div>
-          <div>
-            <div>Fisrt & Last name: </div>
-            <div><%= order.name %></div>
-          </div>
-          <div>
-            <div>Email Address: </div>
-            <div><%= order.email %></div>
-          </div>
-          <div>
-            <div>Books: </div>
-            <div><%= order.books %></div>
-          </div>
-          <div>
-            <div>Genre: </div>
-            <div><%= order.genre %></div>
-          </div>
-        </li>
-        <% }); %>
-        </ul>
+        <div class="alert alert-dark m-5" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Thank you for placing your order! We will ready the book for your pick up at your latest convenience. We will also be sending you an email with the confirmation and the price and details of the book whenever it's available at our store</p>
+            <hr>
+            <p class="mb-0">Hope you have a great read!</p>
+        </div>
     </div>
 </body>
 </html>
