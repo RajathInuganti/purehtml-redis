@@ -9,7 +9,6 @@ const client = redis.createClient({
 
 const connect_redis = async function() {
     await client.connect()
-    client.l
 }
 connect_redis()
 
